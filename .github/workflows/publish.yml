@@ -19,6 +19,10 @@ jobs:
       - name: get-npm-version
         id: package-version
         uses: martinbeentjes/npm-get-version-action@master
+
+      - name: yarn build
+        run: |
+          yarn build
       
       - run: npm publish --access public
         env:
