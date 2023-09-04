@@ -1,4 +1,4 @@
-import { decodePayment } from 'dist'
+import { decodePayment } from 'dist/esm'
 
 describe('decodePayment for EVM', () => {
 
