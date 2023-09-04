@@ -10,6 +10,7 @@ import {
 } from "./types";
 
 import PROTOCOL_ADDRESSES from "./addresses";
+export { PROTOCOL_ADDRESSES };
 
 export type { BlockchainNameType };
 export type { BlockchainNetworkIdType };
