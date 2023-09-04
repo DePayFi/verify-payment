@@ -4,10 +4,11 @@ import pkg from './package.json'
 import replace from '@rollup/plugin-replace'
 import resolve from '@rollup/plugin-node-resolve'
 import sucrase from '@rollup/plugin-sucrase'
+import typescript from 'rollup-plugin-typescript2'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 
 export default {
-  input: 'dist/index.js',
+  input: 'src/index.ts',
   output: [
     {
       format: 'es',
@@ -26,6 +27,8 @@ export default {
     ...Object.keys(pkg.peerDependencies || {}),
   ],
   plugins: [
+    typescript(
+    ),
     sucrase({
       exclude: ['node_modules/**'],
       transforms: ['jsx']
