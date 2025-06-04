@@ -4,10 +4,10 @@ export type BlockchainNameType =
   'base'|
   'bsc'|
   'ethereum'|
-  'fantom'|
   'gnosis'|
   'optimism'|
   'polygon'|
+  'worldchain'|
   'solana'
 ;
 
@@ -17,10 +17,10 @@ export type BlockchainNetworkIdType =
   '8453'|   // base
   '56'|     // bsc
   '1'|      // ethereum
-  '250'|    // fantom
   '100'|    // gnosis
   '10'|     // optimism
   '137'|    // polygon
+  '480'|    // worldchain
   'solana'  // solana
 ;
 
@@ -30,10 +30,10 @@ export type BlockchainIdType =
   '0x2105'|   // base
   '0x38'|     // bsc
   '0x1'|      // ethereum
-  '0xfa'|     // fantom
   '0x64'|     // gnosis
   '0xa'|      // optimism
   '0x89'|     // polygon
+  '0x1e0'|     // worldchain
   'solana'    // solana
 ;
 

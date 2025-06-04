@@ -65,17 +65,17 @@ export function decodePayment({
 
     const method = transaction.substring(2, 10);
 
-    if(method === '422feecb') { // pay(payment)
+    if(method === 'cac7130c') { // pay(tuple payment)
       return {
         amount: parseUint256(splitHexData(transaction, 74, 64)),
-        token: parseAddress(splitHexData(transaction, 330, 64)),
-        receiver: parseAddress(splitHexData(transaction, 522, 64)),
+        token: parseAddress(splitHexData(transaction, 458, 64)),
+        receiver: parseAddress(splitHexData(transaction, 650, 64)),
       };
-    } else if(method === '705c9b14') { // pay(payment,permit2,signature)
+    } else if(method === '64f0acc4') { // pay(tuple payment,tuple permitTransferFromAndSignature)
       return {
-        amount: parseUint256(splitHexData(transaction, 522, 64)),
-        token: parseAddress(splitHexData(transaction, 778, 64)),
-        receiver: parseAddress(splitHexData(transaction, 970, 64)),
+        amount: parseUint256(splitHexData(transaction, 138, 64)),
+        token: parseAddress(splitHexData(transaction, 522, 64)),
+        receiver: parseAddress(splitHexData(transaction, 714, 64)),
       };
     }
     
